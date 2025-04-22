@@ -15,8 +15,10 @@
 
   # Change your current directory to the cloned repository
   cd shopping_assistant
+
   pip install -r requirements.txt # install
 
+<details>
   <summary>Running the application</summary>
   <br>
    #To test out the entire project after installation, run the following command:
