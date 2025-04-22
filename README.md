@@ -6,6 +6,7 @@
 </p>                                            
 **web application that uses generative AI to optimize and structure searching for your desired products online.**
 ---
+ 
 <details>
   <summary>Install</summary>
   <br>
@@ -28,25 +29,25 @@
 </details>
 <br>
 
-__Setup SerpApi account and replace API key__
+#__Setup SerpApi account and replace API key__
 
-In serp_api.py file, you can notice that api_key is required for the Google Search API to function. Follow the instructions to obtain your free Google Search API key
+#In serp_api.py file, you can notice that api_key is required for the Google Search API to function. Follow the instructions to obtain your free Google Search API key
 
-Steps to register and get your Free SerpAPI key:
+#Steps to register and get your Free SerpAPI key:
 
-1. Visit the SerpAPI website:
-Go to SerpAPI’s official website.
+#1. Visit the SerpAPI website:
+#Go to SerpAPI’s official website.
 
-2. Sign up for an account:
-Click on the “Sign Up” button.
-Provide your email address and create a password, or sign up using a social media account.
+#2. Sign up for an account:
+#Click on the “Sign Up” button.
+#Provide your email address and create a password, or sign up using a social media account.
 
-3. Access your API key:
-Once logged in, navigate to your account dashboard.
-Locate your unique Private API key displayed on the dashboard and copy it.
+#3. Access your API key:
+#Once logged in, navigate to your account dashboard.
+#Locate your unique Private API key displayed on the dashboard and copy it.
 
-4. Add the API key to your code:
-Replace api_key in the serp_api.py code with the API key you obtained. You can open the serp_api.py file using the button below.
+#4. Add the API key to your code:
+#Replace api_key in the serp_api.py code with the API key you obtained. You can open the serp_api.py file using the button below.
 
 <details>
   <summary>Running the application</summary>
