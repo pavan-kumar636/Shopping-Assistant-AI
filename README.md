@@ -1,7 +1,9 @@
 ![image](https://github.com/user-attachments/assets/153d9431-1164-48ab-a9cf-4b58f66abb41)
 ---
-                                            
-                                            **Shopping-Assistant-AI**
+
+<p align="center>
+  **AI SHOPPING ASSITANT**
+</p>                                            
 **web application that uses generative AI to optimize and structure searching for your desired products online.**
 ---
 <details>
@@ -15,8 +17,36 @@
 
   # Change your current directory to the cloned repository
   cd shopping_assistant
+  #nitialize a new Python virtual environment to keep required library versions tidy.
+  python -m venv venv
+  cd venv
+  cd Scripts
+  .\activate
 
-  pip install -r requirements.txt # install
+  # install the required libraries
+  pip install -r requirements.txt 
+</details>
+<br>
+
+__Setup SerpApi account and replace API key__
+
+In serp_api.py file, you can notice that api_key is required for the Google Search API to function. Follow the instructions to obtain your free Google Search API key
+
+Steps to register and get your Free SerpAPI key:
+
+1. Visit the SerpAPI website:
+Go to SerpAPI’s official website.
+
+2. Sign up for an account:
+Click on the “Sign Up” button.
+Provide your email address and create a password, or sign up using a social media account.
+
+3. Access your API key:
+Once logged in, navigate to your account dashboard.
+Locate your unique Private API key displayed on the dashboard and copy it.
+
+4. Add the API key to your code:
+Replace api_key in the serp_api.py code with the API key you obtained. You can open the serp_api.py file using the button below.
 
 <details>
   <summary>Running the application</summary>
@@ -24,5 +54,12 @@
    #To test out the entire project after installation, run the following command:
    ```bash
   python app.py
+</details>
+
+ After it runs successfully, you will see a message similar to the following example in the terminal:
+
+
+
+
   
 
