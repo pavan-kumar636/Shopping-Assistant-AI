@@ -11,22 +11,15 @@
   Clone repo and install [requirements.txt](link/to/requirements.txt)
 
   ```bash
-  # Clone the repository
   git clone https://github.com/ibm-developer-skills-network/wnpzo-shopping_assistant.git shopping_assistant
-
-  # Change your current directory to the cloned repository
   cd shopping_assistant
-  #nitialize a new Python virtual environment to keep required library versions tidy.
   python -m venv venv
   cd venv
   cd Scripts
   .\activate
-
-  # install the required libraries
   pip install -r requirements.txt
-  <br>
 </details>
-<br>
+
 
 #__Setup SerpApi account and replace API key__
 
