@@ -23,7 +23,8 @@
   .\activate
 
   # install the required libraries
-  pip install -r requirements.txt 
+  pip install -r requirements.txt
+  <br>
 </details>
 <br>
 
