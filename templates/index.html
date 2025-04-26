@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='custom.css')}}">
+        <title>Shopping Assitant</title>
+    </head>
+    <body>
+        <h1>AI Shopping Assistant!</h1>
+        <form action="/search" method="post">
+            <label for="query">what are you looking for?</label>
+            <input type="text" id="query" name="query" placeholder="e.g., gifts for my son's birthday OR simply a product name" required>
+            <label for="location">Enter City, State/country (optional):</label>
+            <input type="text" id="location" name="location" placeholder="e.g., Hyderabad, India">
+            <button type="submit">Search</button>
+        </form>
+
+        <!--Spinner-->
+        <div id="loading-spinner" style="display: none;">
+            <div class = "spinner"></div>
+        </div>
+
+        {% if refined_query %}
+            <div class="results">
+                <h2>Refined Query:</h2>
+                <p>{{ refined_query }}</p>
+                <h2>Comparision Table:</h2>
+                {{ comparision_table|safe }}
+                <h2>Summary:</h2>
+                {{ summary|safe }}
+            </div>
+        {% endif %}
+
+        <script>
+            const form = document.querySelector("form");
+            const spinner = document.getElementById("loading-spinner");
+
+            form.addEventListener("submit", function (){
+                spinner.style.display = "flex";
+            });
+        </script>
+    </body>
+    </html>
